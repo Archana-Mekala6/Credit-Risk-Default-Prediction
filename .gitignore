@@ -1,0 +1,5 @@
+.env
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+pd_credit_risk_full.csv
