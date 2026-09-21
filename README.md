@@ -77,19 +77,19 @@ The project contains a **4-page Power BI report**:
 
 ### 1. Portfolio Overview
 
-![Portfolio Overview](power%20BI/Screenshots/Page1_overview.png)
+![Portfolio Overview](power%20BI/Screenshots/page1_overview.png)
 
 ### 2. Risk Segmentation
 
-![Risk Segmentation](power%20BI/Screenshots/Page%202_risk%20segmentation.png)
+![Risk Segmentation](power%20BI/Screenshots/page%202_risk%20segmentation.png)
 
 ### 3. PD Threshold Analysis
 
-![PD Threshold Analysis](power%20BI/Screenshots/Page%203_threshold_analysis.png)
+![PD Threshold Analysis](power%20BI/Screenshots/page%203_threshold_analysis.png)
 
 ### 4. Business Impact
 
-![Business Impact](power%20BI/Screenshots/Page%204_business_impact.png)
+![Business Impact](power%20BI/Screenshots/page%204_business_impact.png)
 
 ## Tools & Skills
 
