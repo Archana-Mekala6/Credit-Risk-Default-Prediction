@@ -75,7 +75,7 @@ select
      round(100*sum(default_flag)/count(*),2) as default_rate
 from default_loan_data;
 
--- 3.FEAUTE ENGINEERING
+-- 3.FEATURE ENGINEERING
 alter table default_loan_data
 add column dti decimal(10,2),
 add column loan_to_income decimal(10,2),
@@ -89,7 +89,7 @@ add column dti_band varchar(20);
 alter table default_loan_data
 rename column dti to emi_to_income;
 
--- 3.1 Calculate Dti 
+-- 3.1 Calculate emi to income 
  update default_loan_data
  set emi_to_income =
        round((existing_emi_monthly/monthly_income)*100,2);
@@ -207,7 +207,7 @@ OUTPUT:
     25000       3961431000        1535             281053000          20.71         615.29              21.35             6.14
 */
 
--- 4.2 Compare default rates across across cibil risk segment
+-- 4.2 Compare default rates across cibil risk segment
 select 
       cibil_band,
       count(*) as total_loans,
@@ -386,7 +386,7 @@ from default_loan_data
 group by cibil_band
 order by default_rate desc;  
 /*
-OUTOUT:
+OUTPUT:
 cibil_band	default_rate	difference
 Poor	       13.36	       7.22
 Fair	        1.66	      -4.48
@@ -465,12 +465,12 @@ select
           sum(total_loans) over() ,2) as loan_share,
      round(
            sum(total_loans) over ( order by total_loans desc)*100/
-           sum(total_loans) over() , 2) as cummulative_loan_share
+           sum(total_loans) over() , 2) as cumulative_loan_share
  from purpose_summary
  order by total_loans desc;
  /* 
- OUPUT:
-loan_purpose	  total_loans	loan_share	cummulative_loan_share
+ OUTPUT:
+loan_purpose	  total_loans	loan_share	cumulative_loan_share
 Personal Expense	 5600	       22.40	       22.40
 Wedding	             3462	       13.85	       36.25
 Home Renovation	     3291	       13.16	       49.41
