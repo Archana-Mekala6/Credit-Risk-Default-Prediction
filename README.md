@@ -11,6 +11,7 @@ This project builds a **Probability of Default (PD) model** and uses Power BI to
 * Dataset contains approximately **25,000 loan records**.
 * A **Logistic Regression** model was built to estimate Probability of Default.
 * **CIBIL score** emerged as the strongest predictor of default risk among all features.
+* SQL-based segment analysis showed a clear, monotonic risk gradient by CIBIL band — default rates ranged from **13.36% for Poor CIBIL** borrowers down to **0% for Excellent CIBIL** borrowers, confirming CIBIL score as a strong standalone risk indicator even before modelling.
 * The model achieved a **Precision-Recall AUC of 0.37**, reflecting the added difficulty of ranking risk in an imbalanced dataset where defaults are the minority class.
 * At a **0.20 classification threshold** (chosen to maximize F1-score), default recall improved to **48%**, compared to just **10% recall at the standard 0.50 threshold** — with **39% precision** and a **43% F1-score**.
 * Risk-band default rates on the test set (5,000 loans) increased from **2.24% (Low Risk)** to **51.85% (Very High Risk)**, showing the model meaningfully separates risk tiers.
