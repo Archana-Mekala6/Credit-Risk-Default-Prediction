@@ -58,6 +58,7 @@ This project builds a **Probability of Default (PD) model** and uses Power BI to
 Predicted PD values for the test set (5,000 loans) were grouped into four risk bands:
 
 | Risk Band | Loans | Default Rate |
+| --------- | ----: | -----------: |
 | Low       | 4,143 |        2.24% |
 | Medium    |   476 |       13.86% |
 | High      |   273 |       33.69% |
@@ -71,37 +72,36 @@ The project contains a **4-page Power BI report**:
 2. **Risk Segmentation** — borrower risk-band analysis
 3. **PD Model & Threshold Analysis** — cutoff, Precision, Recall, F1-score, approval rate and confusion matrix
 4. **Business Impact Summary** — risk distribution, segment analysis and model-based loss impact
-
-## Tools & Skills
-
-**SQL:** MySQL
-**Python:** Pandas, Scikit-learn
-**Modelling:** Logistic Regression, Probability of Default
-**Visualisation:** Power BI, DAX
-**Other:** SQLAlchemy, PyMySQL, Git, GitHub
-
+   
 ## Dashboard Preview
-## Power BI Dashboard
 
 ### 1. Portfolio Overview
 
-![Portfolio Overview](Power%20BI/Screenshots/Page1_overview.png)
+![Portfolio Overview](power%20BI/Screenshots/Page1_overview.png)
 
 ### 2. Risk Segmentation
 
-![Risk Segmentation](Power%20BI/Screenshots/Page%202_risk%20segmentation.png)
+![Risk Segmentation](power%20BI/Screenshots/Page%202_risk%20segmentation.png)
 
 ### 3. PD Threshold Analysis
 
-![PD Threshold Analysis](Power%20BI/Screenshots/Page%203_threshold_analysis.png)
+![PD Threshold Analysis](power%20BI/Screenshots/Page%203_threshold_analysis.png)
 
 ### 4. Business Impact
 
-![Business Impact](Power%20BI/Screenshots/Page%204_business_impact.png)
+![Business Impact](power%20BI/Screenshots/Page%204_business_impact.png)
 
+## Tools & Skills
+
+- **SQL:** MySQL
+- **Python:** Pandas, Scikit-learn
+- **Modelling:** Logistic Regression, Probability of Default
+- **Visualisation:** Power BI, DAX
+- **Other:** SQLAlchemy, PyMySQL, Git, GitHub
 
 ## Project Structure
 
+```text
 Credit-Risk-Default-Prediction/
 │
 ├── SQL/
